@@ -44,6 +44,44 @@ background-color:inherit;
 position:relative;
 z-index:1;
 }
+
+div#hmenu {
+   margin: 0;
+   padding: .3em 0 .3em 0;
+   background: inherit
+   width:100%;
+   text-align: center;
+}
+
+div#hmenu ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+div#hmenu ul li {
+   margin: 0;
+   padding: 0;
+   display: inline;
+}
+
+div#hmenu ul a:link{
+   margin: 0;
+   padding: .3em .4em .3em .4em;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: medium;
+   color: #004415;
+} 
+
+
+
+<!-- a {-->
+<!--display:block;-->
+<!--width:60px;-->
+<!--background-color:#447744;-->
+<!--}-->
+
 </style>
 
 <!--[if IE]>
@@ -66,7 +104,22 @@ height="100%" alt="background image">
 <div id="cgpage">
 <div style= "margin-top: 70%; margin-left: 2%; margin-right: 2%">
 
-<h3>About C-Graph </h3>
+
+<div id="hmenu">
+<ul>
+<li><a href="#intro">Intro </a></li>
+<li><a href="#download">Download </a></li>
+<li><a href="#manual">Manual </a></li>
+<li><a href="#support">Support </a></li>
+<li><a href="#origin">Origin </a></li>
+<li><a href="#help">Help Us </a></li>
+<li><a href="#license">License </a></li>
+<li><a href="#dedication">Dedication </a></li>
+<li><a href="#translations">Translations</a></li>
+</ul> 
+</div
+
+<a id="intro"><h3>Intro </h3></a>
 
 <p>Coded in modern Fortran, GNU C-Graph demonstrates the theory of
   convolution underlying engineering systems and signal
@@ -90,8 +143,7 @@ height="100%" alt="background image">
   value in visualizing convolution.</p>
 
 
-<h3 id="download">Downloading
-  C-Graph</h3>
+<a id="download"><h3>Download</h3></a>
 
 <p>Download C-Graph from the main GNU ftp
   server: <a href="http://ftp.gnu.org/gnu/c-graph/">http://ftp.gnu.org/gnu/c-graph/</a>
@@ -103,7 +155,7 @@ can also be found on the <a href="/prep/ftp.html">GNU
   mirror</a> when possible.</p>
 
 
-<h3 id="documentation">Documentation</h3>
+<a id="manual"><h3>Manual</h3></a>
 
 <p><a href="http://codeartnow.com/code/download/c-graph-1/c-graph-version-2-preview/c-graph-2.0.pdf/">Documentation
  for C-Graph</a> is available online, as
@@ -117,7 +169,7 @@ or similar directories on your system.  A brief summary is available by
 running <em>c-graph&nbsp;--help</em>.</p>
 
 
-<h3 id="mail">Mailing lists</h3>
+<a id="support"><h3>Support</h3></a>
 
 <p>The mailing list for C-Graph is:
 
@@ -135,7 +187,7 @@ and most other GNU software are made on
 (<a href="http://lists.gnu.org/archive/html/info-gnu/">archive</a>).</p>
 
 
-<h3>Origin </h3>
+<a id="origin"><h3>Origin </h3></a>
 
 <p>GNU C-Graph is derived from the BSc. Honours dissertation in
   Electrical Engineering "Interactive Computer Package Demonstrating:
@@ -147,7 +199,7 @@ and most other GNU software are made on
   realising that the package's usefulness could be enjoyed globally.</p>
 
 
-<h3 id="contribute">Getting involved</h3>
+<a id="help"><h3>Help Us</h3></a>
 
 <p>As with all GNU packages, development of C-Graph is a volunteer
   effort. Contributions from other developers are welcome; join the
@@ -174,14 +226,14 @@ at <a href="http://savannah.gnu.org">savannah.gnu.org</a>.</dd>
 </dl>
 
 
-<h3>Dedication </h3> 
+<a id="dedication"<h3>Dedication </h3></a>
 
 <p>C-Graph is dedicated to all victims of apartheid, and to
  Haitian-Bahamian attorney-at-law and human rights advocate, Eliezer
  Regnier.</p>
 
 
-<h3 id="license">Licensing</h3>
+<a id="license"><h3>License</h3></a>
 
 <p>C-Graph is free software; you can redistribute it and/or modify it
  under the terms of the <a href="http://www.gnu.org/licenses/gpl.html"
@@ -189,49 +241,9 @@ at <a href="http://savannah.gnu.org">savannah.gnu.org</a>.</dd>
  Software Foundation; either version&nbsp;3 of the License, or (at your
  option) any later version.</p>
 
-<p><br><br></p>
 
-</div>
-
-
-<!-- If needed, change the copyright block at the bottom. In general,
-     pages on the GNU web server should be under CC BY-ND 3.0 US.
-     Please do NOT change or remove this without talking
-     with the webmasters or licensing team first.
-     Please make sure the copyright date is consistent with the document
-     and that it is like this: "2001, 2002", not this: "2001-2002". -->
-
-<!-- for id="content", starts in the include above -->
-<!--#include virtual="/server/footer.html" -->
-<div id="footer">
-
-<p>Please send general FSF &amp; GNU inquiries to
-<a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.
-There are also <a href="/contact/">other ways to contact</a>
-the FSF.<br />
-Please send broken links and other corrections or suggestions to
-<a href="mailto:bug-c-graph@gnu.org">&lt;bug-c-graph@gnu.org&gt;</a>.</p>
-
-<p>Please see the <a
-href="/server/standards/README.translations.html">Translations
-README</a> for information on coordinating and submitting translations
-of this article.</p>
-
-<p>Copyright &copy; 2011 Free Software Foundation, Inc.</p>
-
-<p>This page is licensed under a <a rel="license"
-href="http://creativecommons.org/licenses/by-nd/3.0/us/">Creative
-Commons Attribution-NoDerivs 3.0 United States License</a>.</p>
-
-<p>Updated:
-<!-- timestamp start -->
-$Date: 2012/06/11 16:09:09 $
-<!-- timestamp end -->
-</p>
-</div>
-
-<div id="translations">
-<h4>Translations of this page</h4>
+<a id="translations">
+<a <h3>Translations</h3>
 
 <!-- Please keep this list alphabetical by language code.
      Comment what the language is for each type, i.e. de is German.
@@ -254,12 +266,56 @@ $Date: 2012/06/11 16:09:09 $
 
 <ul class="translations-list">
 <!-- English -->
-<li><a href="/server/standards/boilerplate.html">English</a>&nbsp;[en]</li>
+<li><a href="/software/c-graph">English</a>&nbsp;[en]</li>
 </ul>
+
+<p>Please see the <a
+href="/server/standards/README.translations.html">Translations
+README</a> for information on coordinating and submitting translations
+for C-Graph.</p>
+
+<p><br><br></p>
+
 </div>
 </div>
+
+<div style="background-color: #d3d3d3">
+<div style= "margin-left: 2%; margin-right: 2%; background-color: inherit">
+
+<!-- If needed, change the copyright block at the bottom. In general,
+     pages on the GNU web server should be under CC BY-ND 3.0 US.
+     Please do NOT change or remove this without talking
+     with the webmasters or licensing team first.
+     Please make sure the copyright date is consistent with the document
+     and that it is like this: "2001, 2002", not this: "2001-2002". -->
+
+<!-- for id="content", starts in the include above -->
+<!--#include virtual="/server/footer.html" -->
+<div id="footer">
+
+<p>Please send general FSF &amp; GNU inquiries to
+<a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.
+There are also <a href="/contact/">other ways to contact</a>
+the FSF.<br />
+Please send broken links and other corrections or suggestions to
+<a href="mailto:bug-c-graph@gnu.org">&lt;bug-c-graph@gnu.org&gt;</a>.</p>
+
+<p>Copyright &copy; 2011 Free Software Foundation, Inc.</p>
+
+<p>This page is licensed under a <a rel="license"
+href="http://creativecommons.org/licenses/by-nd/3.0/us/">Creative
+Commons Attribution-NoDerivs 3.0 United States License</a>.</p>
+
+<p>Updated:
+<!-- timestamp start -->
+$Date: 2012/06/15 15:44:05 $
+<!-- timestamp end -->
+</p>
 </div>
 </div>
-</div>
+
+
+
+
 </body>
 </html>
