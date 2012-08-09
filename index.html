@@ -7,8 +7,8 @@
 <link rel="icon" type="image/png" href="images/gnu-head-mini.png"
 
 
-<comment><title>C-Graph - GNU Project - Free Software
-  Foundation</title></comment>
+<comment><title>C-Graph: Visualizing Convolution - A GNU Package from
+the Free Software Foundation</title></comment>
 
 <link rel="stylesheet" href="/combo.css" media="screen" />
 <link rel="stylesheet" href="/layout.css" media="screen" />
@@ -27,55 +27,172 @@ background-color:#e8ece6;
 height: 100%;
 margin: 0;
 padding:0;
+font-family: 'Open Sans', sans-serif;
 }
 
 #bg
 {
-position:absolute;
+position:relative;
 top:0;
 left:0;
 width:100%;
 height:auto%;
 } 
 
-#cgpage
-{
-background-color:inherit;
-position:relative;
+
+
+div#bg-clicks .gnu-operating-system {
+position: absolute;
+top:7.5%;
+left:5%;
+height:8%;
+width: 50%;
+background-color: green;
+filter: Alpha(opacity=0);
+opacity: 0.0;
+z-index: 0;
+}
+
+div#bg-clicks .logo {
+position: absolute;
+top:36.5%;
+left:7.5%;
+height:27%;
+width: 22%;
+background-color: green;
+filter: Alpha(opacity=0);
+opacity: 0.0;
+z-index: 0;
+}
+
+
+div#bg-clicks .gnu-c-graph {
+position: absolute;
+top:44.5%;
+left:55%;
+height:6%;
+width: 30%;
+background-color: green;
+filter: Alpha(opacity=0);
+opacity: 0.0;
+z-index: 0;
+}
+
+
+
+div#bg-clicks .drop-menu {
+position: absolute;
+top:31.5%;
+left:62%;
+height:6%;
+width: 10%;
+background-color: green;
+filter: Alpha(opacity=0);
+opacity: 0.0;
+z-index: 0;
+}
+
+div#headroom {
+position: absolute; top: 70%;
+}
+
+
+div#cgpage {
+background-color:#e8ece6;
+position: absolute; top: 90%;
 z-index:1;
+border-style:none none none solid;
+border-left-width: 45px;
+border-color: #a1b89a;
 }
 
-div#hmenu {
-   margin: 0;
-   padding: .3em 0 .3em 0;
-   background: #b4c0ac;
-   width:100%;
-   text-align: center;
-}
 
-div#hmenu ul {
+div#hmenu #menu {
    list-style: none;
    margin: 0;
    padding: 0;
+width: 100%;
+height: 212px;
+ }
+
+
+div#hmenu #menu li {
+float:left;
 }
 
-div#hmenu ul li {
-   margin: 0;
-   padding: 0;
-   display: inline;
+div#hmenu #menu a {
+background-image: url(images/2hmenu.png);
+background-repeat: no-repeat;
+background-position: top;
+display: block;
+height: 60px;
+width: 116px;
+line-height: 53px;
+text-align: center;
+text-decoration: none;
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
+font-size: 16px;
+color: #005600;
+border-top:10px solid #94b28e;
 }
 
-div#hmenu ul a:link{
-   margin: 0;
-   padding: .3em .4em .3em .4em;
-   text-decoration: none;
-   font-weight: bold;
-   font-size: medium;
-   color: #004415;
-} 
+div#hmenu #menu a:visited{
+color: #ffffff;
+}
+
+div#hmenu #menu a:hover{
+background-image: url(images/2hmenu.png);
+background-repeat: no-repeat;
+background-position: bottom;
+display: block;
+height: 140px;
+width: 116px;
+color: #005600;
+}
+
+h2 {
+font-family: 'Open Sans', sans-serif;
+font-size: 25px;
+font-weight:bold;
+color: #006c00; 
+margin-top:60px;
+background: url(images/h2-bullets.png) left bottom  no-repeat;
+padding: 0px 0px 25px 5.25%;
+margin-bottom: 0px;
+}
+
+#intro h2 {
+margin-top: 0;
+}
+
+h3 {
+font-family: 'Open Sans', sans-serif;
+font-size: 18px;
+font-weight:bold;
+color: #006c00; 
+margin-left: 5.25%;
+color: #c48900;
+padding: 0;
+}
+
+p {
+font-size:1em;
+margin-left: 5.25%;
+margin-top: 0;
+text-align:justify;
+}
+
+p.first, h3.first {
+margin-top: -15px;
+}
+
+ul.single {
+margin-left:22px;
+}
+
  
-#footer
-{
+#footer {
 }
 
 
@@ -86,8 +203,7 @@ div#hmenu ul a:link{
 /* some css fixes for IE browsers */
 html {overflow-y:hidden;}
 body {overflow-y:auto;}
-#bg {position:static; z-index:-1;}
-#cgpage {position:static; margin-top:-80%;}
+#bg {position:relative; z-index:-1;}
 </style>
 <![endif]-->
 
@@ -96,34 +212,44 @@ body {overflow-y:auto;}
 <body>
 <div id="bg"><img src="images/c-graph-background.png" width="100%"
 height="100%" alt="background image">
+
+<div id="bg-clicks">
+<a href="http://gnu.org/" class="gnu-operating-system"><span></span></a>
+<a href="#headroom" class="gnu-c-graph"></a>
+<a href="#download" class="logo"></a>
+<a href="https://www.fsf.org/associate/support_freedom?referrer=4052" class="drop-menu"></a>
 </div>
 
-<div id="cgpage">
-<div style= "margin-top: 70%; margin-left: 2%; margin-right: 2%">
+<div id="headroom"></div>
+
+<div id="cgpage" >
+<div style= "margin: 0 5% ">
+
 
 <div id="hmenu">
-<ul>
-<li><a href="#intro">Intro </a></li>
-<li><a href="#download">Download </a></li>
-<li><a href="#manual">Manual </a></li>
-<li><a href="#support">Support </a></li>
-<li><a href="#origin">Origin </a></li>
-<li><a href="#help">Help Us </a></li>
-<li><a href="#license">License </a></li>
-<li><a href="#dedication">Dedication </a></li>
+<ul id="menu">
+<li><a href="#intro">Intro</a></li>
+<li><a href="#download">Download</a></li>
+<li><a href="#manual">Manual</a></li>
+<li><a href="#support">Support</a></li>
+<li><a href="#progress">Progress</a></li>
+<li><a href="#dedication">Dedication</a></li>
 <li><a href="#translations">Translations</a></li>
 </ul> 
-</div
+</div>
 
-<p><br><br></p>
 
-<a id="intro"><h3>Intro </h3></a>
 
-<p>Coded in modern Fortran, GNU C-Graph demonstrates the theory of
+
+<a id="intro"><h2>Intro: Visualizing the Convolution Theorem</h2></a>
+
+<p class="first">Coded in modern Fortran, GNU C-Graph demonstrates the theory of
   convolution underlying engineering systems and signal
   analysis. "C-Graph" is an abbreviation for "Convolution Graph".</p>
 
-<p>Unlike other signal processing packages, C-Graph dispenses with the
+<h3>Features</h3>
+
+<p class="first">Unlike other signal processing packages, C-Graph dispenses with the
   learning curve for writing code. Instead, an interactive dialogue
   guides the user to effortlessly select values for keyboard input.</p>
 
@@ -140,10 +266,22 @@ height="100%" alt="background image">
 <p>Students of signal and systems theory will find GNU C-Graph to be of
   value in visualizing convolution.</p>
 
+<h3>Origin</h3>
 
-<a id="download"><h3>Download</h3></a>
+<p class="first">GNU C-Graph is derived from the BSc. Honours dissertation in
+  Electrical Engineering "Interactive Computer Package Demonstrating:
+  Sampling Convolution and the FFT", Adrienne Gaye Thompson, University
+  of Aberdeen (1983).</p>
 
-<p>Download C-Graph from the main GNU ftp
+<p>Adrienne - who is sole author of the dissertation - reproduced its
+  Fortran 77 program in modern Fortran. She donated C-Graph to GNU
+  realising that the package's usefulness could be enjoyed globally.</p>
+
+
+
+<a id="download"><h2>Download</h2></a>
+
+<p class="first">Download C-Graph from the main GNU ftp
   server: <a href="http://ftp.gnu.org/gnu/c-graph/">http://ftp.gnu.org/gnu/c-graph/</a>
   via HTTP
   or, <a href="ftp://ftp.gnu.org/gnu/c-graph/">ftp://ftp.gnu.org/gnu/c-graph/</a>
@@ -152,10 +290,18 @@ can also be found on the <a href="/prep/ftp.html">GNU
   mirrors</a>. Please <a href="http://ftpmirror.gnu.org/c-graph/">use a
   mirror</a> when possible.</p>
 
+<h3>License</h3>
+<p class="first">C-Graph is free software; you can redistribute it and/or modify it
+ under the terms of the <a href="http://www.gnu.org/licenses/gpl.html"
+ rel="license">GNU General Public License</a> as published by the Free
+ Software Foundation; either version&nbsp;3 of the License, or (at your
+ option) any later version.</p>
 
-<a id="manual"><h3>Manual</h3></a>
 
-<p><a href="http://codeartnow.com/code/download/c-graph-1/c-graph-version-2-preview/c-graph-2.0.pdf/">Documentation
+
+<a id="manual"><h2>Manual</h2></a>
+
+<p class="first"><a href="http://codeartnow.com/code/download/c-graph-1/c-graph-version-2-preview/c-graph-2.0.pdf/">Documentation
  for C-Graph</a> is available online, as
  is <a href="/manual/">documentation for most GNU software</a>.  You may
  also find more information about C-Graph by running
@@ -167,16 +313,17 @@ or similar directories on your system.  A brief summary is available by
 running <em>c-graph&nbsp;--help</em>.</p>
 
 
-<a id="support"><h3>Support</h3></a>
+<a id="support"><h2>Support</h2></a>
 
-<p>The mailing list for C-Graph is:
-
-<ul>
+<h3 class="first">Supporting You</h3>
+<p class="first">The mailing list for C-Graph is:
+<ul class="single">
 <li><a href="https://lists.gnu.org/mailman/listinfo/bug-c-graph">bug-c-graph</a>
 is used to discuss most aspects of C-Graph, including development and
 enhancement requests, as well as bug reports. This list is also for
 general user help and discussion.</li>
 </ul>
+</p>
 
 <p>Announcements about
 C-Graph
@@ -184,111 +331,61 @@ and most other GNU software are made on
 <a href="http://lists.gnu.org/mailman/listinfo/info-gnu">info-gnu</a>
 (<a href="http://lists.gnu.org/archive/html/info-gnu/">archive</a>).</p>
 
-
-<a id="origin"><h3>Origin </h3></a>
-
-<p>GNU C-Graph is derived from the BSc. Honours dissertation in
-  Electrical Engineering "Interactive Computer Package Demonstrating:
-  Sampling Convolution and the FFT", Adrienne Gaye Thompson, University
-  of Aberdeen (1983).</p>
-
-<p>Adrienne - who is sole author of the dissertation - reproduced its
-  Fortran 77 program in modern Fortran. She donated C-Graph to GNU
-  realising that the package's usefulness could be enjoyed globally.</p>
-
-
-<a id="help"><h3>Help Us</h3></a>
-
-<p>As with all GNU packages, development of C-Graph is a volunteer
+<h3>Supporting Us</h3>
+<p class="first">As with all GNU packages, development of C-Graph is a volunteer
   effort. Contributions from other developers are welcome; join the
   mailing list (see above).</p)
 
 <p>Those who value Freedom will find it cooler
 to <a href="http://codeartnow.com/gallery-1/freedom/gravitating-to-gnu">Gravitate to GNU</a>. Read <a href="/help/">How to help GNU</a>. </p>
 
-<dl>
-<dt>Development</dt>
 
-<dd>For development sources, issue trackers, and other
+
+<a id="progress"><h2>Progress</h2></a>
+
+<p class="first">For development sources, issue trackers, and other
 information, please see the
 <a href="http://savannah.gnu.org/projects/c-graph/">C-Graph
 project page</a>
-at <a href="http://savannah.gnu.org">savannah.gnu.org</a>.</dd>
+at <a href="http://savannah.gnu.org">savannah.gnu.org</a>.</p>
+
+<p> At the moment, C-Graph author and maintainer Adrienne Gaye Thompson is the sole member of the development team. We are recruiting developers; please join us via the mailing lists.
+</p>
 
 
-<dt>Maintainer</dt>
 
-<dd>C-Graph author Adrienne Gaye Thompson is also maintainer. Please
-  use the mailing lists for contact.</dd>
+<a id="dedication"><h2>Dedication</h2></a>
 
-</dl>
-
-
-<a id="dedication"<h3>Dedication </h3></a>
-
-<p>C-Graph is dedicated to all victims of apartheid, and to
+<p class="first">C-Graph is dedicated to all victims of apartheid, and to
  Haitian-Bahamian attorney-at-law and human rights advocate, Eliezer
- Regnier.</p>
+ Regnier, who died as a result of the struggle for justice.</p>
 
 
-<a id="license"><h3>License</h3></a>
 
-<p>C-Graph is free software; you can redistribute it and/or modify it
- under the terms of the <a href="http://www.gnu.org/licenses/gpl.html"
- rel="license">GNU General Public License</a> as published by the Free
- Software Foundation; either version&nbsp;3 of the License, or (at your
- option) any later version.</p>
+<a id="translations"><h2>Translations</h2></a>
 
-
-<a id="translations">
-<a <h3>Translations</h3>
-
-<!-- Please keep this list alphabetical by language code.
-     Comment what the language is for each type, i.e. de is German.
-     Write the language name in its own language (Deutsch) in the text.
-     If you add a new language here, please
-     advise web-translators@gnu.org and add it to
-      - /home/www/html/server/standards/README.translations.html
-      - one of the lists under the section "Translations Underway"
-      - if there is a translation team, you also have to add an alias
-      to mail.gnu.org:/com/mailer/aliases
-     Please also check you have the language code right; see:
-     http://www.loc.gov/standards/iso639-2/php/code_list.php
-     If the 2-letter ISO 639-1 code is not available,
-     use the 3-letter ISO 639-2.
-     Please use W3C normative character entities.
-
-     See also '(web-trans)Capitalization':
-     http://gnu.org/software/trans-coord/manual/web-trans/html_node/Capitalization.html
-     -->
-
-<ul class="translations-list">
-<!-- English -->
-<li><a href="/software/c-graph">English</a>&nbsp;[en]</li>
-</ul>
-
-<p>Please see the <a
-href="/server/standards/README.translations.html">Translations
+<p class="first">Please see the <ahref="/server/standards/README.translations.html">Translations
 README</a> for information on coordinating and submitting translations
 for C-Graph.</p>
 
+<ul class="single">
+<!-- English -->
+<li><a href="/software/c-graph">English</a>&nbsp;[en]</li>
+</ul>
+<br>
+
 <p><br><br></p>
 
-</div>
+</div> <!--cgsytyle -->
 
-<div style="background-color: #d3d3d3">
-<div style= "margin-left: 2%; margin-right: 2%">
 
-<!-- If needed, change the copyright block at the bottom. In general,
-     pages on the GNU web server should be under CC BY-ND 3.0 US.
-     Please do NOT change or remove this without talking
-     with the webmasters or licensing team first.
-     Please make sure the copyright date is consistent with the document
-     and that it is like this: "2001, 2002", not this: "2001-2002". -->
 
-<!-- for id="content", starts in the include above -->
+
+<div id="footer" style="background-color: #d3d3d3; padding: 2% 0"
+>
+
 <!--#include virtual="/server/footer.html" -->
-<div id="footer" style="background-color: #d3d3d3">
+
 
 <p>Please send general FSF &amp; GNU inquiries to
 <a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.
@@ -305,18 +402,13 @@ Commons Attribution-NoDerivs 3.0 United States License</a>.</p>
 
 <p>Updated:
 <!-- timestamp start -->
-$Date: 2012/08/09 19:57:12 $
+$Date: 2012/08/09 20:11:49 $
 <!-- timestamp end -->
 </p>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-
+</div><!--footer -->
+</div> <!--cgpage -->
+</div> <!--bg -->
 
 </body>
 </html>
+
