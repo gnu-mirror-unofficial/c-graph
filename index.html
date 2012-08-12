@@ -38,6 +38,16 @@ height: auto;
 } 
 
 
+.make-transparent {
+zoom: 1;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter: alpha(opacity=0);
+-moz-opacity: 0.0;
+-khtml-opacity: 0.0;
+opacity: 0.0;
+z-index: 0;
+}
+
 
 div#bg-clicks .gnu-operating-system {
 position: absolute;
@@ -46,9 +56,6 @@ left: 5%;
 height: 8%;
 width: 50%;
 background-color: green;
-filter: alpha(opacity=0);
-opacity: 0.0;
-z-index: 0;
 }
 
 div#bg-clicks .logo {
@@ -58,9 +65,6 @@ left: 7.5%;
 height: 27%;
 width: 22%;
 background-color: green;
-filter: alpha(opacity=0);
-opacity: 0.0;
-z-index: 0;
 }
 
 
@@ -71,9 +75,6 @@ left: 55%;
 height: 6%;
 width: 30%;
 background-color: green;
-filter: alpha(opacity=0);
-opacity: 0.0;
-z-index: 0;
 }
 
 
@@ -85,9 +86,6 @@ left: 62%;
 height: 6%;
 width: 10%;
 background-color: green;
-filter: alpha(opacity=0);
-opacity: 0.0;
-z-index: 0;
 }
 
 div#headroom {
@@ -221,10 +219,11 @@ body {overflow-y:auto;}
 height="100%" alt="background image" />
 
 <div id="bg-clicks">
-<a href="http://gnu.org/" class="gnu-operating-system"><span></span></a>
-<a href="#headroom" class="gnu-c-graph"></a>
-<a href="#download" class="logo"></a>
-<a href="https://www.fsf.org/associate/support_freedom?referrer=4052" class="drop-menu"></a>
+<a href="http://gnu.org/" class="gnu-operating-system make-transparent"></a>
+<a href="#headroom" class="gnu-c-graph make-transparent"></a>
+<a href="#download" class="logo make-transparent"></a>
+<a href="https://www.fsf.org/associate/support_freedom?referrer=4052"
+   class="drop-menu make-transparent"></a>
 </div>
 
 <div id="headroom"></div>
@@ -409,7 +408,7 @@ Commons Attribution-NoDerivs 3.0 United States License</a>.</p>
 
 <p>Updated:
 <!-- timestamp start -->
-$Date: 2012/08/12 14:42:24 $
+$Date: 2012/08/12 15:29:54 $
 <!-- timestamp end -->
 </p>
 </div><!--footer -->
