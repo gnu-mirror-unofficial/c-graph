@@ -37,6 +37,9 @@ width: 100%;
 height: auto;
 } 
 
+#wrapper {
+position: relative;
+}
 
 .make-transparent {
 zoom: 1;
@@ -103,8 +106,11 @@ border-left-width: 45px;
 border-color: #a1b89a;
 }
 
+div#hmenu {
+position:relative;
+}
+
 div#hmenu ul li {
-position: relative;
 margin: 0;
 padding: 0;
 list-style-type: none;
@@ -211,7 +217,6 @@ padding: 2% 0
 html {overflow-y: hidden;}
 body {overflow-y: auto;}
 #bg {position: static; z-index: -1;}
-#cgpage {position: relative;}
 .gainlayout {zoom: 1;}
 </style>
 <![endif]-->
@@ -221,6 +226,8 @@ body {overflow-y: auto;}
 <body>
 <div id="bg"><img src="images/c-graph-background.png" width="100%"
 height="100%" alt="background image" />
+
+<div id="wrapper" id="headroom" class="gainlayout">
 
 <div id="bg-clicks">
 <a href="http://gnu.org/" class="gnu-operating-system make-transparent"></a>
@@ -412,11 +419,12 @@ Commons Attribution-NoDerivs 3.0 United States License</a>.</p>
 
 <p>Updated:
 <!-- timestamp start -->
-$Date: 2012/08/17 19:30:27 $
+$Date: 2012/08/17 21:45:27 $
 <!-- timestamp end -->
 </p>
 </div><!--footer -->
 </div> <!--cgpage -->
+</div> <!--wrapper -->
 </div> <!--bg -->
 
 </body>
