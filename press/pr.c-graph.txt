@@ -1,0 +1,44 @@
+
+
+It's Trendy to Visualize Convolution with GNU C-Graph
+
+Over 100,000 users discover that learning about a key theorem in engineering can be just a few keystrokes away
+
+
+FOR IMMEDIATE RELEASE
+
+[Boston, Massachusetts - 11, Sept 2013] GNU Project system administrators have now recorded 1,277 downloads since their convolution demo package “C-Graph” was released two years ago. With over 150 GNU download mirror sites worldwide, and its inclusion in the Fedora GNU/Linux distribution, a userbase of 100,000 is a conservative estimate. C-Graph (short for “Convolution Graph) demonstrates what is regarded as the most significant theorem in signal processing, the Convolution Theorem. This free software package is set to become a popular tool for lecture demonstrations and lab work in universities and colleges.
+
+Convolution
+===========
+Convolution is a mathematical description of the response of what engineers refer to as a “linear time-invariant system” to an input signal. Practical examples of this natural phenomenon abound: reverberation in music production is the convolution of sound with echoes from surrounding objects; a blurred photograph is the convolution of the ideally sharp image with a function defined by the camera lens. Convolution theory has applications that range from computer vision to statistics.
+
+Signals have dual descriptions: the time domain, and the frequency domain. An operation called the Fourier Transform gives the signal spectrum, the representation of a time function in the frequency domain. According to the Convolution Theorem, the Fourier transform of the convolution of two signals is equal to the product of their Fourier transforms. The converse is also true - the inverse Fourier transform of the product of the signal transforms is equal to their convolution.
+
+Because of its periodic nature, the Fast Fourier Transform or FFT (the high-speed computational analogue of the Fourier transform) results in circular convolution, a distortion of the naturally occurring linear convolution endemic to the time domain. GNU C-Graph demonstrates the criterion under which linear and circular convolution produce the same result. This understanding is fundamental to the design of filters in the many applications, today, that rely on convolution theory. See the C-Graph manual for an outline of the theory, and references.
+
+Features
+========
+C-Graph is user-friendly, its interactive dialogue dispensing with the learning curve for writing code. The package features a scalable wave set consisting of pulses, their periodic counterparts, and aperiodic functions. Effective displays of the signals, their spectra, and their convolutions can be mounted with just a few keystrokes.
+
+The interactive dialogue prompts the users to choose two signals from a wave set of sine, cosine, triangular, rectangular, sawtooth, exponential, ramp and step functions. On selecting the length of the signals, their frequencies or pulse widths (if applicable), and scale factors, C-Graph then displays the waveforms, their spectra, and a comparison of their linear and circular convolutions. The graphs displayed are automatically saved for further analysis and/or printing. See the C-Graph manual for examples of output.
+Add a spark to lecture demonstrations, or just learn about the Convolution Theorem by downloading C-Graph today.
+
+
+About GNU C-Graph
+=================
+C-Graph is coded in Fortran and runs on any GNU/Linux system. The package is derived from the electrical engineering BSc dissertation “Interactive Computer Package Demonstrating: Sampling Convolution and the FFT”, Adrienne Gaye Thompson, University of Aberdeen (1983). Thompson is sole author of the work. Learn more about C-Graph from http://www.gnu.org/software/c-graph.
+
+About the GNU Operating System and Linux
+========================================
+Richard Stallman announced in September 1983 the plan to develop a free software Unix-like operating system called GNU. GNU is the only operating system developed specifically for the sake of users' freedom. See <http://www.gnu.org/gnu/the-gnu-project.html>.
+In 1992, the essential components of GNU were complete, except for one, the kernel. When in 1992 the kernel Linux was re-released under the GNU GPL, making it free software, the combination of GNU and Linux formed a complete free operating system, which made it possible for the first time to run a PC without non-free software. This combination is the GNU/Linux system. For more explanation, see <http://www.gnu.org/gnu/gnu-linux-faq.html>.
+
+Contact:
+Adrienne Gaye Thompson
+Author and Maintainer GNU C-Graph
+email: agt@codeartnow.com
+Twitter: @GnuCgraph
+###
+
+
