@@ -1,0 +1,66 @@
+
+
+IT'S TRENDY TO VISUALIZE CONVOLUTION WITH GNU C-GRAPH
+
+Over 100,000 users discover that learning about a key theorem in engineering can be just a few keystrokes away
+
+[Boston, Massachusetts - 20, Sept 2013] GNU C-Graph is a novel tool that demonstrates what is regarded as the most significant theorem in signal processing, the Convolution Theorem. GNU Project systems administrators have now recorded 1,277 downloads since the package was released two years ago. With over 150 GNU download mirror sites worldwide, and its inclusion in the Fedora GNU/Linux distribution, a userbase of 100,000 is a conservative estimate. The news is validation of the usefulness of C-Graph as a learning aid for a subject in which conceptual understanding is known to be difficult. This free software package is set to become a popular tool for lecture demonstrations and lab work in universities and colleges.
+
+
+THE TEACHING OF CONVOLUTION 
+Convolution is a notoriously difficult subject to learn. Students struggle with developing a conceptual understanding of the operation, in part, because their professors are also challenged by how to communicate interpretation of the equations conceptually.[2] [3] [4] The quest to devise new approaches includes the employment of high-level mathematics software packages (such as GNU Octave, Mathematica, Matlab, Maple, Ptolemy), and web-based applications (which normally use Java applets) to transform the traditional teaching model to "discovery-based" learning.[5, para. 5] C-Graph is designed to complement these methods in the teaching of convolution and, in particular, the convolution theorem.
+
+Translation of symbolic algebra to graphical representations effectively motivates students' assimilation of mathematical concepts. Employment of visualization not only enhances the communication of ideas from professor to student, but appears to have greater value in the development of intuitive understanding compared with more traditional methods of instruction. [5, para. 5]  
+
+Bamberger and others found, for example, that rather than attempting to reinforce understanding through graphs after teaching the convolution integral, conceptual understanding and retention significantly improved by reversing the order of representation. The ability to conceive the convolution of a pair of signals can be acquired after the student has performed only a dozen or so convolutions using a visualization tool.[5, para. 2] C-Graph's ability to allow the user to rapidly visualize a sequence of convolutions, on the fly, should accordingly translate to more efficient learning.
+
+
+FEATURES
+Web-based demonstrations of convolution are typically limited in the range of waveforms available to the convolution exercise. On the other hand, the high-level mathematics packages mentioned above require the student to first learn code syntax before attempting any exercise in visualization.
+
+C-Graph features a friendly interactive dialogue that dispenses with the learning curve for writing code. The package features a scalable wave set consisting of pulses, their periodic counterparts, and aperiodic functions. Effective displays of the signals, their spectra, and their convolutions can be mounted with just a few keystrokes. The package demonstrates the criterion under which linear and circular convolution produce the same result, and the distortion introduced when convolution via the Fast Fourier Transform (FFT) does not so conform.
+
+The interactive dialogue prompts the student to enter values for variables from the keyboard. The student chooses two signals from a wave set of sine, cosine, triangular, rectangular, sawtooth, exponential, ramp and step functions. On selecting the length of the signals, their frequencies or pulse widths (if applicable), and scale factors, C-Graph displays the waveforms, their spectra, and a comparison of their linear and circular convolutions. As no coding is required to construct and display the graphs, successive convolutions can be easily performed. Graphs are automatically saved for further analysis and/or printing.
+ 
+Download GNU C-Graph from <http://www.gnu.org/software/c-graph> for integration into courses on signal processing to build intuition for understanding convolution. See the C-Graph manual for examples of output illustrating the convolution of a rectangular pulse with a ramp function. Graphs demonstrating the response of a simple low-pass RC filter are also available via twitter @GnuCgraph.[6]
+
+ "The only real valuable thing is intuition", Albert Einstein [7]
+
+
+REFERENCES
+
+ 1.	A. G. Thompson, GNU C-Graph 2.0 Manual: A Tool for Learning about Convolution, 26 August 2011, available at <http://www.gnu.org/s/c-graph/manual/c-graph.pdf>.
+
+ 2.	J. K. Nelson, and M. A. Hjalmarson, "Students' Understanding of Convolution", in Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Vancouver, Canada, May 2013.
+
+ 3.	D. Berner, and W. Reich, "Animated Visualization of Convolution and Correlation", presented at the UNESCO International Centre for Engineering Education (UICEE) 2nd Global Congress on Engineering Education, Wismar, Germany, July 2000, available at <http://bit.ly/14Z0Z98> (visited 17 September 2013).
+
+ 4.	S. Easwaran, "An Innovative Software Tool for Teaching Discrete Convolution from the Perspective of the Output Signal in Digital Signal Processing: Its Software Design and Implementation, and Usage on Teaching and Learning", in Proceedings of the American Society for Engineering Education (ASEE) Annual Conference and Exposition, Portland, Oregon, USA, June 2005, available at <http://bit.ly/15A4Ho5> (visited 17 September 2013).
+
+ 5.	R. H. Bamberger, B. L. Evans, E. A. Lee, J. H. McClellan, M. A. Yoder, "Integrating Analysis, Simulation, and Implementation Tools in Electronic Courseware for Teaching Signal Processing", in Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Detroit, Michigan, USA, May 1995, available at <http://bit.ly/18t0HT1>(visited 17 September 2013).
+
+ 6.	A. G. Thompson, Response of a simple Low-pass RC filter: Convolution of an exponential impulse response with a triangular pulse, GNU C-Graph demo, available at
+	<https://twitter.com/GnuCgraph/status/380819753314443264>
+	<https://twitter.com/GnuCgraph/status/380819219513741312>
+	<https://twitter.com/GnuCgraph/status/380814647495901184>
+
+ 7.	Attributed to Albert Einstein by Brainy Quote: <http://www.brainyquote.com/quotes/quotes/a/alberteins165188.html>, visited (17 September 2013)
+
+
+	
+ABOUT GNU C-GRAPH
+C-Graph is coded in Fortran and runs on any GNU/Linux system. The package is derived from the electrical engineering BSc dissertation "Interactive Computer Package Demonstrating: Sampling Convolution and the FFT", Adrienne Gaye Thompson, University of Aberdeen (1983). Thompson is sole author of the work. Learn more about C-Graph from <http://www.gnu.org/software/c-graph>.
+
+ABOUT THE GNU OPERATING SYSTEM AND LINUX
+Richard Stallman announced in September 1983 the plan to develop a free software Unix-like operating system called GNU. GNU is the only operating system developed specifically for the sake of users' freedom. See <http://www.gnu.org/gnu/the-gnu-project.html>.
+In 1992, the essential components of GNU were complete, except for one, the kernel. When in 1992 the kernel Linux was re-released under the GNU GPL, making it free software, the combination of GNU and Linux formed a complete free operating system, which made it possible for the first time to run a PC without non-free software. This combination is the GNU/Linux system. For more explanation, see <http://www.gnu.org/gnu/gnu-linux-faq.html>.
+
+CONTACT:
+Adrienne Gaye Thompson
+Author and Maintainer GNU C-Graph
+email: agt@codeartnow.com
+Twitter: @GnuCgraph
+
+							###
+
+
