@@ -21,7 +21,8 @@ Features
 ========
 C-Graph is user-friendly, its interactive dialogue dispensing with the learning curve for writing code. The package features a scalable wave set consisting of pulses, their periodic counterparts, and aperiodic functions. Effective displays of the signals, their spectra, and their convolutions can be mounted with just a few keystrokes.
 
-The interactive dialogue prompts the users to choose two signals from a wave set of sine, cosine, triangular, rectangular, sawtooth, exponential, ramp and step functions. On selecting the length of the signals, their frequencies or pulse widths (if applicable), and scale factors, C-Graph then displays the waveforms, their spectra, and a comparison of their linear and circular convolutions. The graphs displayed are automatically saved for further analysis and/or printing. See the C-Graph manual for examples of output.
+The interactive dialogue prompts the users to choose two signals from a wave set of sine, cosine, triangular, rectangular, sawtooth, exponential, ramp and step functions. On selecting the length of the signals, their frequencies or pulse widths (if applicable), and scale factors, C-Graph then displays the waveforms, their spectra, and a comparison of their linear and circular convolutions. The graphs displayed are automatically saved for further analysis and/or printing. See the C-Graph manual for examples of output illustrating the convolution of a rectangular pulse with a ramp function. Graphs demonstrating the response of a simple low-pass RC filter are also available via twitter @GnuCgraph.[*]
+
 Add a spark to lecture demonstrations, or just learn about the Convolution Theorem by downloading C-Graph today.
 
 
@@ -39,6 +40,9 @@ Adrienne Gaye Thompson
 Author and Maintainer GNU C-Graph
 email: agt@codeartnow.com
 Twitter: @GnuCgraph
+
+Amended 23 September 2013
+
 ###
 
 
