@@ -6,14 +6,10 @@ min-height: 100%;
 background-color: #e8ece6;
 margin: 0 5%;
 padding: 0;
-font-family: 'Open Sans', sans-serif;
-}
-
-
-div#cgpage {
 border-style: none none none solid;
 border-left-width: 45px;
 border-color: #a1b89a;
+font-family: 'Open Sans', sans-serif;
 }
 
 
