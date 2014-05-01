@@ -1,7 +1,6 @@
-html {height: 100%;
-border-style: none none none solid;
-border-left-width: 45px;
-border-color: #a1b89a;
+html {
+height: 100%;
+
 }
 
 body {
@@ -9,8 +8,12 @@ min-height: 100%;
 background-color: #e8ece6;
 margin: 0;
 padding: 0;
-
 font-family: 'Open Sans', sans-serif;
+border-style: solid none none solid;
+border-left-width: 45px;
+border-top-width: 45px;
+border-color: #a1b89a;
+
 }
 
 
@@ -51,13 +54,15 @@ margin-top: 0;
 
 h3 {
 font-family: 'Open Sans', sans-serif;
-font-size: 15px;
+font-size: 18px;
 font-weight: bold;
 text-align: left;
 margin-left: 5.25%;
 color: #c48900;
 padding: 0;
 }
+
+
 
 p {
 font-size: 1em;
@@ -68,6 +73,22 @@ text-align: justify;
 
 p.first, h3.first {
 }
+
+
+
+div#logo {
+position:absolute;
+top:0;
+left:0;
+}
+
+
+div#cgpage {
+border-style: none none none solid;
+border-left-width: 45px;
+border-top-width: 45px;
+border-color: #a1b89a;
+
 
 ul.bullets {
 margin-left: 5.25%;
