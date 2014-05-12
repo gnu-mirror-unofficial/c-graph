@@ -1,0 +1,147 @@
+
+html,
+body {
+margin:0;
+padding:0;
+height:100%;
+}
+
+
+#wrapper {
+min-height:100%;
+position:relative;
+background-color: #e8ece6;
+margin: 0;
+padding: 0;
+font-family: 'Open Sans', sans-serif;
+}
+
+img {
+border-style:none;
+}
+
+
+#logo {
+position:absolute;
+top:0;
+left:0;
+}
+
+
+#cgpage {
+position: static;
+margin: 0;
+padding: 100px 0 250px 0;/* Bottom is Height of the footer element */
+border-style: solid none none solid;
+border-left-width: 45px;
+border-top-width: 45px;
+border-color: #a1b89a;
+}
+
+
+
+a:link { text-decoration: none; color: #006c00 }
+a:visited { text-decoration: none; color: #009100 }
+a:hover { text-decoration: underline; color: #006c00 }
+
+
+h1 {
+font-family: 'Open Sans', sans-serif;
+font-size: 30px;
+font-weight: bold;
+text-align: center;
+color: #006c00; 
+}
+
+
+h2 {
+font-family: 'Open Sans', sans-serif;
+font-size: 20px;
+font-weight: bold;
+text-align: left;
+color: #006c00; 
+margin-top: 60px;
+background: url(../images/h2-bullets.png) left bottom  no-repeat;
+padding: 0px 0px 25px 5.25%;
+margin-bottom: 0px;
+}
+
+#intro h2 {
+margin-top: 0;
+}
+
+h3 {
+font-family: 'Open Sans', sans-serif;
+font-size: 18px;
+font-weight: bold;
+text-align: left;
+margin-left: 5.25%;
+color: #c48900;
+padding: 0;
+}
+
+
+
+p {
+font-size: 14px;
+margin-left: 5.25%;
+margin-top: 0;
+text-align: justify;
+}
+
+p.first, h3.first {
+}
+
+
+
+#footer-border {
+width:100%;
+height:200px;
+position:absolute;
+bottom:0;
+left:0;
+
+border-style: solid none none none;
+border-top-width: 10px;
+border-color: #bfbfbf;
+}
+
+#footer {
+width:100%;
+height:190px;
+position:relative;
+bottom:0;
+left:0;
+margin: 0;
+background:#dcdcdc; 
+border-style: solid none none none;
+border-top-width: 10px;
+border-color: #94b28e;
+}
+
+#column1 {
+position: absolute;
+top: 0;
+left: 0;
+width:30%;
+margin: 2% 5% 0 5%;
+text-align: center;
+}
+
+#column2 {
+position: absolute;
+top: 0;
+right: 0;
+width:50%;
+margin: 2% 5% 0 5%;
+font-family: 'Open Sans', sans-serif;
+font-size: 11px;
+text-align: left;
+}
+
+#fsf-logo {
+margin: 0 0 10% 0;
+}
+
+
+
