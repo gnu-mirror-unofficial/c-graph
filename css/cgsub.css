@@ -29,6 +29,7 @@ left:0;
 
 
 #cgpage {
+position: static;
 margin: 0;
 padding: 100px 0 250px 0;/* Bottom is Height of the footer element */
 border-style: solid none none solid;
@@ -36,6 +37,7 @@ border-left-width: 45px;
 border-top-width: 45px;
 border-color: #a1b89a;
 }
+
 
 
 a:link { text-decoration: none; color: #006c00 }
@@ -105,10 +107,9 @@ border-color: #bfbfbf;
 }
 
 #footer {
-float:left;
 width:100%;
 height:190px;
-position:absolute;
+position:relative;
 bottom:0;
 left:0;
 margin: 0;
@@ -119,22 +120,27 @@ border-color: #94b28e;
 }
 
 #column1 {
-float:left;
+position: absolute;
+top: 0;
+left: 0;
 width:30%;
 margin: 2% 5% 0 5%;
+text-align: center;
 }
 
 #column2 {
-float:left;
+position: absolute;
+top: 0;
+right: 0;
 width:50%;
 margin: 2% 5% 0 5%;
 font-family: 'Open Sans', sans-serif;
-font-size: 12px;
+font-size: 11px;
 text-align: left;
 }
 
-#clear {
-clear:both;
+#fsf-logo {
+margin: 0 0 10% 0;
 }
 
 
