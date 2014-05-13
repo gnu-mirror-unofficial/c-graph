@@ -31,7 +31,7 @@ left:0;
 #cgpage {
 position: static;
 margin: 0;
-padding: 100px 0 300px 0;/* Bottom is Height of the footer element */
+padding: 100px 0 250px 0;/* Bottom is Height of the footer element */
 border-style: solid none none solid;
 border-left-width: 45px;
 border-top-width: 45px;
