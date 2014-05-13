@@ -121,6 +121,7 @@ background:#dcdcdc;
 border-style: solid none none none;
 border-top-width: 10px;
 border-color: #94b28e;
+z-index: 50;
 }
 
 #column1 {
