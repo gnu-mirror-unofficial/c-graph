@@ -94,9 +94,9 @@ text-align: justify;
 p.first, h3.first {
 }
 
-.foot {
+/*.foot {
 font-size: .7em;
-}
+}*/
 
 #footer-border {
 width:100%;
@@ -142,6 +142,7 @@ width:50%;
 margin: 2% 5% 0 5%;
 padding-top: 1.2em;
 font-family: 'Open Sans', sans-serif;
+font-size: .9em;
 text-align: left;
 overflow: hidden;
 }
