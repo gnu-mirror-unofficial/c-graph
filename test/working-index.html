@@ -29,7 +29,6 @@ padding: 0;
 font-family: 'Open Sans', sans-serif;
 }
 
-
 #bg {
 position: relative;
 top: 0;
@@ -166,11 +165,6 @@ width: 116px;
 color: #005600;
 }
 
-a:link { text-decoration: none; color: #006c00 }
-a:visited { text-decoration: none; color: #009100 }
-a:hover { text-decoration: underline; color: #006c00 }
-
-
 h2 {
 font-family: 'Open Sans', sans-serif;
 font-size: 25px;
@@ -209,7 +203,7 @@ p.first, h3.first {
 margin-top: -15px;
 }
 
-ul.bullets {
+ul.single {
 margin-left: 5.25%;
 }
 
@@ -243,7 +237,7 @@ body {overflow-y: auto;}
 
 <body>
 <div id="bg"><img src="../images/c-graph-bg1.png" width="100%"
-height="auto" alt="background image" />
+height="100%" alt="background image" />
 
 
 <div id="bg-clicks">
@@ -253,7 +247,6 @@ height="auto" alt="background image" />
 <a href="https://www.fsf.org/associate/support_freedom?referrer=4052"
    class="drop-menu make-transparent"></a>
 </div>
-</div><!--bg -->
 
 <div id="headroom" class="gainlayout"></div>
 
@@ -327,12 +320,6 @@ height="auto" alt="background image" />
   mirrors</a>. Please <a href="http://ftpmirror.gnu.org/c-graph/">use a
   mirror</a> when possible.</p>
 
-<p>C-Graph also comes
-  with <a href="http://www.fedoraproject.org">Fedora</a>, the first
-  GNU/Linux distro to include our package. Sad to say, Fedora is not
-  quite a <a href="http://www.gnu.org/distros">free distro</a>. Should
-  they become free, we can all then <a href="http://codeartnow.com/gallery-1/freedom/gravitating-to-gnu">wear a Fedora for freedom!</a></p>
-
 <h3>License</h3>
 <p class="first">C-Graph is free software; you can redistribute it
  and/or modify it under the terms of
@@ -345,12 +332,10 @@ height="auto" alt="background image" />
 
 <h2 id="manual">Manual</h2>
 
-<p class="first">The C-Graph manual is currently available
- in <a href="manual/c-graph.pdf">pdf</a> format, for which
- the <a href="manual/c-graph.texi">Texinfo source</a> may also be
- downloaded. We will be making the manual available in the usual
- formats <a href="/manual/">published</a> by GNU. You may also find more
- information about C-Graph by running
+<p class="first"><a href="manual/c-graph.pdf">Documentation
+ for C-Graph</a> is available online, as
+ is <a href="/manual/">documentation for most GNU software</a>.  You may
+ also find more information about C-Graph by running
 <em>info&nbsp;c-graph</em> or by looking at
 <em>/usr/doc/c-graph/</em>,
 <em>/usr/local/doc/c-graph/</em>,
@@ -362,7 +347,7 @@ running <em>c-graph&nbsp;--help</em>.</p>
 
 <h3 class="first">Supporting You</h3>
 <p class="first">The mailing list for C-Graph is:</p>
-<ul class="bullets">
+<ul class="single">
 <li><a href="https://lists.gnu.org/mailman/listinfo/bug-c-graph">
 bug-c-graph</a> is used to discuss most aspects of C-Graph, including
 development and enhancement requests, as well as bug reports. This list
@@ -375,22 +360,14 @@ is also for general user help and discussion.</li>
 (<a href="http://lists.gnu.org/archive/html/info-gnu/">archive</a>).</p>
 
 <h3>Supporting Us</h3>
-<p class="first">Your C-Graph experience will impact your intuitive
-  understanding of convolution theory. We can better meet your needs if
-  you tell us about your sessions, suggest new features, and report
-  any issues you may encounter. Let us hear from you. Get in touch and
-  exchange ideas
-  on <a href="https://lists.gnu.org/mailman/listinfo/bug-c-graph">
-  bug-c-graph!</a></p>
-
-<p>We plan to upgrade the FFT algorithm and provide a custom command
-  line interface in our next release. Contributions from other
-  developers are welcome;</p>
+<p class="first">As with all GNU packages, development of C-Graph is a
+  volunteer effort. Contributions from other developers are welcome;
+  join the mailing list (see above).</p>
 
 <p>Those who value Freedom will find it cooler
-    to <a href="http://codeartnow.com/gallery-1/freedom/gravitating-to-gnu">Gravitate
-    to GNU.</a> <a href="/graphics/adrienne/dancing-gnu.png">Get on
-    point with GNU</a>, and read <a href="/help/">How to help</a>. </p>
+to <a href="http://codeartnow.com/gallery-1/freedom/gravitating-to-gnu">Gravitate
+to GNU</a>. <a href="/graphics/adrienne/dancing-gnu.png">Get on point
+with GNU</a>, and read <a href="/help/">How to help</a>. </p>
 
 
 
@@ -401,30 +378,19 @@ information, please see the
 <a href="http://savannah.gnu.org/projects/c-graph/">C-Graph project
 page</a> at <a href="http://savannah.gnu.org">savannah.gnu.org</a>.</p>
 
-<p>Over 100,000 discover that visualizing convolution with C-Graph is
-  easy! See our first press releases:
-<ul class="bullets">
-<li>11 September 2013: <a href="cgpress/pr.c-graph.pdf">pdf</a>,
- <a href="cgpress/pr.c-graph.txt">text</a>
-<li>20 September 2013: <a href="cgpress/mr.c-graph.pdf">pdf</a>,
- <a href="cgpress/mr.c-graph.txt">text</a>
-</ul>
-</p>
-
-<p>We are recruiting developers! Please join us via the mailing
+<p> We are recruiting developers! Please join us via the mailing
 lists.</p>
 
 
 
-<h2 id="dedication">Dedication</h2>
+<h2 id="dedication">Dedication and Logo</h2>
 
 <p class="first">C-Graph is dedicated to all victims of apartheid, and
  to Haitian-Bahamian attorney-at-law and human rights advocate, Eliezer
  Regnier, who died as a result of the struggle for justice.</p>
 
-<p>Our <a href="http://gnu.org/software/c-graph/images/c-graph.png">logo</a>
-  is inspired by computer vision, the movie "Blade Runner", the
-  copyright symbol, and Regnier's saxophone.</p>
+<p>Our logo is inspired by computer vision, the movie "Blade Runner",
+  the copyright symbol, and Regnier's saxophone.</p>
 
 
 
@@ -435,17 +401,25 @@ lists.</p>
   README</a> for information on coordinating and submitting translations
   for C-Graph.</p> 
 
-<ul class="bullets">
+<ul class="single">
 <li><a href="/software/c-graph">English</a>&nbsp;[en]</li>
 </ul>
 
 <!-- <p><br><br></p> -->
 
+
 </div> <!--cgsytyle -->
 
 
-<p><br><br><br><br></p>
+<div id="gnu-footer">
 
+<!--#include virtual="/server/footer.html" -->
+
+<div style= "position: absolute; top: 39.5%; left: 0; height: 16%;
+	     width: 100%; background-color: #dcdcdc">
+</div> <!-- covered "Back to Top"white block in footer -->
+ 
+<br>
 <p>Please send general FSF &amp; GNU inquiries to
 <a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.  There are
 also <a href="/contact/">other ways to contact</a> the FSF.<br />
@@ -460,12 +434,13 @@ Commons Attribution-NoDerivs 3.0 United States License</a>.</p>
 
 <p>Updated:
 <!-- timestamp start -->
-$Date: 2014/05/16 18:05:00 $
+$Date: 2014/05/16 18:26:20 $
 <!-- timestamp end -->
 </p>
+</div><!--footer -->
 </div> <!--cgpage -->
 </div> <!--wrapper -->
-
+</div> <!--bg -->
 
 </body>
 </html>
