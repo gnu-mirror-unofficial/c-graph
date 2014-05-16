@@ -32,7 +32,7 @@ z-index: 100;
 #cgpage {
 position: relative;
 margin: 0;
-padding: 15% 0 300px 0;/* Bottom is Height of the footer element */
+padding: 15% 0 300px 0;/* Bottom= footer height */
 border-style: solid none none solid;
 border-left-width: 45px;
 border-top-width: 45px;
@@ -94,9 +94,9 @@ text-align: justify;
 p.first, h3.first {
 }
 
-/*.foot {
-font-size: .7em;
-}*/
+.foot {
+font-size: 11px;
+}
 
 #footer-border {
 width:100%;
@@ -142,7 +142,6 @@ width:50%;
 margin: 2% 5% 0 5%;
 padding-top: 1.2em;
 font-family: 'Open Sans', sans-serif;
-font-size: 11px;
 text-align: left;
 overflow: hidden;
 }
