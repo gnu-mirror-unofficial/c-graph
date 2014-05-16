@@ -1,10 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="author" href="mailto:webmasters@gnu.org" />
-<link rel="icon" type="image/png" href="../images/cgicon32.png" />
+<link rel="icon" type="image/png" href="images/gnu-head-mini.png" />
 
 
 <title>GNU C-Graph: Visualizing Convolution</title>
@@ -37,13 +37,6 @@ width: 100%;
 height: auto;
 } 
 
-#wrapper {
-position: relative;
-width: 100%;
-height: auto;
-margin: 0;
-padding: 0;
-}
 
 .make-transparent {
 zoom: 1;
@@ -52,9 +45,8 @@ filter: alpha(opacity=0);
 -moz-opacity: 0.0;
 -khtml-opacity: 0.0;
 opacity: 0.0;
-z-index: 1;
+z-index: 0;
 }
-
 
 
 div#bg-clicks .gnu-operating-system {
@@ -85,6 +77,8 @@ width: 30%;
 background-color: green;
 }
 
+
+
 div#bg-clicks .drop-menu {
 position: absolute;
 top: 31.5%;
@@ -96,7 +90,6 @@ background-color: green;
 
 div#headroom {
 position: absolute; top: 70%;
-height: 1%;
 }
 
 
@@ -107,12 +100,6 @@ z-index: 1;
 border-style: none none none solid;
 border-left-width: 45px;
 border-color: #a1b89a;
-}
-
-div#hmenu {
-position:relative;
-margin: 0;
-padding: 0;
 }
 
 div#hmenu ul li {
@@ -169,7 +156,6 @@ h2 {
 font-family: 'Open Sans', sans-serif;
 font-size: 25px;
 font-weight: bold;
-text-align: left;
 color: #006c00; 
 margin-top: 60px;
 background: url(../images/h2-bullets.png) left bottom  no-repeat;
@@ -185,7 +171,6 @@ h3 {
 font-family: 'Open Sans', sans-serif;
 font-size: 18px;
 font-weight: bold;
-text-align: left;
 color: #006c00; 
 margin-left: 5.25%;
 color: #c48900;
@@ -212,11 +197,7 @@ margin-left: 5.25%;
 position: relative;
 background-color: #dcdcdc; 
 margin-top: 30px; 
-padding: 2% 0;
-font-family: 'Open Sans', sans-serif;
-font-size: 12px;
-font-weight: bold;
-text-align: justify;
+padding: 2% 0
 }
 
 
@@ -225,20 +206,17 @@ text-align: justify;
 <!--[if IE]>
 <style type="text/css">
 /* some css fixes for IE browsers */
-html {overflow-y: hidden;}
-body {overflow-y: auto;}
-#bg {position: static; z-index: -1;}
-.gainlayout {zoom: 1;}
-#bg-clicks {position: relative;}
+html {overflow-y:hidden;}
+body {overflow-y:auto;}
+#bg {position:relative; z-index: -1;}
 </style>
 <![endif]-->
 
 </head>
 
 <body>
-<div id="bg"><img src="../images/c-graph-bg1.png" width="100%"
+<div id="bg"><img src="../images/c-graph-bg2.png" width="100%"
 height="100%" alt="background image" />
-
 
 <div id="bg-clicks">
 <a href="http://gnu.org/" class="gnu-operating-system make-transparent"></a>
@@ -248,16 +226,14 @@ height="100%" alt="background image" />
    class="drop-menu make-transparent"></a>
 </div>
 
-<div id="headroom" class="gainlayout"></div>
+<div id="headroom"></div>
 
-<div id="wrapper">
-
-<div id="cgpage" class="gainlayout">
+<div id="cgpage" >
 <div style= "margin: 0 5% ">
 
 
-<div id="hmenu" class="gainlayout">
-<ul id="menu" class="gainlayout">
+<div id="hmenu">
+<ul id="menu">
 <li><a href="#intro">Intro</a></li>
 <li><a href="#download">Download</a></li>
 <li><a href="#manual">Manual</a></li>
@@ -332,7 +308,7 @@ height="100%" alt="background image" />
 
 <h2 id="manual">Manual</h2>
 
-<p class="first"><a href="manual/c-graph.pdf">Documentation
+<p class="first"><a href="http://codeartnow.com/code/download/c-graph-1/c-graph-version-2-preview/c-graph-2.0.pdf/">Documentation
  for C-Graph</a> is available online, as
  is <a href="/manual/">documentation for most GNU software</a>.  You may
  also find more information about C-Graph by running
@@ -366,8 +342,7 @@ is also for general user help and discussion.</li>
 
 <p>Those who value Freedom will find it cooler
 to <a href="http://codeartnow.com/gallery-1/freedom/gravitating-to-gnu">Gravitate
-to GNU</a>. <a href="/graphics/adrienne/dancing-gnu.png">Get on point
-with GNU</a>, and read <a href="/help/">How to help</a>. </p>
+to GNU</a>. Read <a href="/help/">How to help GNU</a>. </p>
 
 
 
@@ -378,19 +353,18 @@ information, please see the
 <a href="http://savannah.gnu.org/projects/c-graph/">C-Graph project
 page</a> at <a href="http://savannah.gnu.org">savannah.gnu.org</a>.</p>
 
-<p> We are recruiting developers! Please join us via the mailing
-lists.</p>
+<p> At the moment, C-Graph author and maintainer Adrienne Gaye Thompson
+is the sole member of the development team. We are recruiting
+developers; please join us via the mailing lists.
+</p>
 
 
 
-<h2 id="dedication">Dedication and Logo</h2>
+<h2 id="dedication">Dedication</h2>
 
 <p class="first">C-Graph is dedicated to all victims of apartheid, and
  to Haitian-Bahamian attorney-at-law and human rights advocate, Eliezer
  Regnier, who died as a result of the struggle for justice.</p>
-
-<p>Our logo is inspired by computer vision, the movie "Blade Runner",
-  the copyright symbol, and Regnier's saxophone.</p>
 
 
 
@@ -415,18 +389,18 @@ lists.</p>
 
 <!--#include virtual="/server/footer.html" -->
 
-<div style= "position: absolute; top: 39.5%; left: 0; height: 16%;
+<div style= "position: absolute; top: 42%; left: 0; height: 12%;
 	     width: 100%; background-color: #dcdcdc">
 </div> <!-- covered "Back to Top"white block in footer -->
  
-<br>
+
 <p>Please send general FSF &amp; GNU inquiries to
 <a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.  There are
 also <a href="/contact/">other ways to contact</a> the FSF.<br />
 Please send broken links and other corrections or suggestions to
 <a href="mailto:bug-c-graph@gnu.org">&lt;bug-c-graph@gnu.org&gt;</a>.</p>
 
-<p>Copyright &copy; 2013 Adrienne Gaye Thompson</p>
+<p>Copyright &copy; 2012 Free Software Foundation, Inc.</p>
 
 <p>This page is licensed under a <a rel="license"
 href="http://creativecommons.org/licenses/by-nd/3.0/us/">Creative
@@ -434,12 +408,11 @@ Commons Attribution-NoDerivs 3.0 United States License</a>.</p>
 
 <p>Updated:
 <!-- timestamp start -->
-$Date: 2014/05/16 18:26:20 $
+$Date: 2014/05/16 18:41:55 $
 <!-- timestamp end -->
 </p>
 </div><!--footer -->
 </div> <!--cgpage -->
-</div> <!--wrapper -->
 </div> <!--bg -->
 
 </body>
