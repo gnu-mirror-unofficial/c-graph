@@ -94,6 +94,14 @@ text-align: justify;
 p.first, h3.first {
 }
 
+ul {
+list-style-type: square;
+margin-left: 10%;
+padding: 0;
+color: #006c00; 
+
+} 
+
 .foot {
 font-size: 11px;
 }
