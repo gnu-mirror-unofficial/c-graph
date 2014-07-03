@@ -95,9 +95,6 @@ if (form.os0.value == "robot coffee maker")
 
 <br>
 <p class="first">
-<!-- Start of Form -->
-<!-- Note: target="paypal" was replaced with target="_self" -->
-<!-- This change allows better functionality with IE and Firefox -->
 <form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
  
 <p><input type="hidden" name="on0" value="Make it a onetime brew!">Make it a onetime brew:&nbsp;&nbsp;
@@ -114,20 +111,17 @@ if (form.os0.value == "robot coffee maker")
 </p>
 <br><br>
 
-<INPUT onclick=CalculateOrder(this.form) type="image" alt="Make payments with PayPal - it's fast, free and secure!" 
-src="../images/brew-now.png" border=0 name="submit">
+<INPUT onclick=CalculateOrder(this.form) type="image"\
+alt="GNU C-Graph - the free software tool that makes learning about convolution easy!" src="../images/brew-now.png" border=0 name="submit">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 <input type="hidden" name="cmd" value="_donations">
-<!-- Replace "business" value with your PayPal Email Address or your Merchant Account ID -->
 <input type="hidden" name="business" value="agt@codeartnow.com">
 <input type="hidden" name="item_name" value="Brew Now">
 <input type="hidden" name="amount">
 <input type="hidden" name="item_number">
 <input type="hidden" name="no_shipping" value="1">
 <input type="hidden" name="tax" value="0">
-<!-- Replace value with the web page you want the customer to return to after a successful transaction -->
 <input type="hidden" name="return" value="http://www.gnu.org/s/c-graph/donate/thanks.html">
-<!-- Replace value with the web page you want the customer to return to after item cancellation -->
 <input type="hidden" name="cancel_return" value="http://www.gnu.org/s/c-graph/donate/visitagain.html">
 <input type="hidden" name="currency_code" value="USD">
 <input type="hidden" name="lc" value="US">
@@ -163,14 +157,16 @@ src="../images/brew-now.png" border=0 name="submit">
 
 <input type="hidden" name="currency_code" value="USD">
 <br><br>
-<input type="image" src="../images/brew-again.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<input type="image" src="../images/brew-again.png" border="0"
+       name="submit" alt="GNU C-Graph - the free software tool that makes
+       learning about convolution easy!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 </p>
 
 <h2 id="checkin">Check IN</h2>
 
-<p class="first">Send cheques and other banking transfers to:
+<p class="first">Send checks and other banking transfers to:
 <ul>
 	<li>GNU C-Graph</li>
 	<li>Account: 932209</li>
@@ -201,7 +197,7 @@ src="../images/brew-now.png" border=0 name="submit">
 
 			<p class="foot">Updated:
 			<!-- timestamp start -->
-			$Date: 2014/07/02 18:12:51 $
+			$Date: 2014/07/03 16:45:15 $
 			<!-- timestamp end -->
 			</p>
 		</div>
